@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Lngst_Palindromic_Sub_String",
+            "request": "launch",
+            "mainClass": "Lngst_Palindromic_Sub_String",
+            "projectName": "DS-JAVA_2ac12c07"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch EditDistance_DP",
+            "request": "launch",
+            "mainClass": "EditDistance_DP",
+            "projectName": "DS-JAVA_2ac12c07"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestBitonicSequences",
+            "request": "launch",
+            "mainClass": "LongestBitonicSequences",
+            "projectName": "DS-JAVA_2ac12c07"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestCommonSubsequence",
+            "request": "launch",
+            "mainClass": "LongestCommonSubsequence",
+            "projectName": "DS-JAVA_2ac12c07"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestIncreasingSubsequence",
+            "request": "launch",
+            "mainClass": "LongestIncreasingSubsequence",
+            "projectName": "DS-JAVA_2ac12c07"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxSum_Increasing_SubsequeneArray",
+            "request": "launch",
+            "mainClass": "MaxSum_Increasing_SubsequeneArray",
+            "projectName": "DS-JAVA_2ac12c07"
+        },
+        {
+            "type": "java",
+            "name": "Launch No_Sub_Arr_Divisible_byK",
+            "request": "launch",
+            "mainClass": "No_Sub_Arr_Divisible_byK",
+            "projectName": "DS-JAVA_2ac12c07"
+        },
+        {
+            "type": "java",
+            "name": "Launch No_Sub_Arr_Sum_equalsToK",
+            "request": "launch",
+            "mainClass": "No_Sub_Arr_Sum_equalsToK",
+            "projectName": "DS-JAVA_2ac12c07"
+        }
+    ]
+}
