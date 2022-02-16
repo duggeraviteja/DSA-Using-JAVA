@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class PostOrderTraversal extends BST {
+public class PostOrderTraversal {
     static void postOrderRecursive(Node root) {
         if (root == null) {
             return;
@@ -41,18 +41,16 @@ public class PostOrderTraversal extends BST {
     }
 
     public static void main(String[] args) {
-        bstTree a = new bstTree();
-        Node root = null;
 
-        root = a.insert(root, 8);
-        root = a.insert(root, 3);
-        root = a.insert(root, 6);
-        root = a.insert(root, 10);
-        root = a.insert(root, 4);
-        root = a.insert(root, 7);
-        root = a.insert(root, 1);
-        root = a.insert(root, 14);
-        root = a.insert(root, 13);
+        Node root = new Node(10);
+        root.left = new Node(20);
+        root.right = new Node(30);
+
+        root.left.left = new Node(40);
+        root.left.right = new Node(60);
+
+        root.right.left = new Node(90);
+        root.right.right = new Node(100);
 
         postOrderRecursive(root);
         System.out.println("\n =====");

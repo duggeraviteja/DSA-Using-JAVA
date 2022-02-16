@@ -1,36 +1,36 @@
+public class DIstanceBetweenTwoNodes {
+    static Node LCA(Node n, int a, int b) {
+        if (n == null || n.data == a || n.data == b)
+            return n;
 
-public class HeightOfTree {
+        Node l = LCA(n.left, a, b);
+        Node r = LCA(n.right, a, b);
 
-    static int height(Node node) {
+        if (l == null)
+            return r;
+        if (r == null)
+            return l;
 
-        if (node == null) {
-            return 0;
-        }
-
-        int left = height(node.left);
-        int right = height(node.right);
-
-        return 1 + Math.max(left, right);
+        return n;
     }
 
-    static int distanceFromRoot_Node(Node n, int t) {
+    static int dis(Node n, int t) {
         if (n == null)
             return 0;
         if (n.data == t)
             return 1;
 
-        int l = distanceFromRoot_Node(n.left, t);
+        int l = dis(n.left, t);
         if (l > 0)
             l++;
 
-        int r = distanceFromRoot_Node(n.right, t);
+        int r = dis(n.right, t);
         if (r > 0)
             r++;
 
         return Math.max(l, r);
 
     }
-
     static int findDistance(Node root, int x) {
         if (root == null)
             return -1;
@@ -45,8 +45,16 @@ public class HeightOfTree {
         return dist;
     }
 
-    public static void main(String[] args) {
+    static int DistanceBetween2Nodes(Node root, int a, int b) {
+        Node lca = LCA(root, a, b);
 
+        int l = findDistance(lca, a);
+        int r = findDistance(lca, b);
+
+        return l + r;
+    }
+
+    public static void main(String[] args) {
         Node root = new Node(10);
         root.left = new Node(20);
         root.right = new Node(30);
@@ -57,11 +65,7 @@ public class HeightOfTree {
         root.right.left = new Node(90);
         root.right.right = new Node(100);
 
-        System.out.println(" height : " +height(root));
-
-        System.out.println(distanceFromRoot_Node(root, 100));
-
-        System.out.println(findDistance(root, 40));
+        System.out.println(DistanceBetween2Nodes(root, 40, 100));
 
     }
 }

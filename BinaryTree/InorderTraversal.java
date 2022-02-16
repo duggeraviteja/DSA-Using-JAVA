@@ -1,7 +1,7 @@
 import java.util.Stack;
 
 
-public class InorderTraversal extends BST  {
+public class InorderTraversal   {
 
     static void recursiveInorder(Node root) {
         if(root == null ) {
@@ -12,6 +12,7 @@ public class InorderTraversal extends BST  {
         System.out.print(root.data +" ");
         recursiveInorder(root.right);
     }
+    
 
     static void iterativeInorder(Node root) {
         Stack<Node> st = new Stack<>();
@@ -33,19 +34,18 @@ public class InorderTraversal extends BST  {
 
 
     public static void main(String[] args) {
-        bstTree a = new bstTree();
-        Node root = null;
-        
-        root = a.insert(root, 8);
-        root = a.insert(root, 3);
-        root = a.insert(root, 6);
-        root = a.insert(root, 10);
-        root = a.insert(root, 4);
-        root = a.insert(root, 7);
-        root = a.insert(root, 1);
-        root = a.insert(root, 14);
-        root = a.insert(root, 13);
+           
+    Node root = new Node(10);
+    root.left = new Node(20);
+    root.right = new Node(30);
 
+     root.left.left = new Node(40);
+     root.left.right = new Node(60);
+
+     root.right.left = new Node(90);
+     root.right.right = new Node(100);
+
+ 
         //  Recursive inorder traversing  
         recursiveInorder(root);
 

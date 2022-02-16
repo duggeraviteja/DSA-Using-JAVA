@@ -33,11 +33,29 @@ class bstTree {
 
 
 public class BST {
+   
+ static int dis(Node n, int t){
+    if(n==null)
+        return 0;
+    if(n.data==t)
+        return 1;
+        
+    int l = dis(n.left, t);
+    if(l>0)
+        l++;
+    
+    int r = dis(n.right, t);
+    if(r>0)
+        r++;
+    
+    return Math.max(l,r);
+    
+}
 
     public static void inorderRec(Node root){
         if (root != null) {
             inorderRec(root.left);
-            System.out.println(root.data);
+            System.out.print(root.data +" ");
             inorderRec(root.right);
         }
     }
@@ -57,6 +75,11 @@ public class BST {
     
 
     inorderRec(root);
+    System.out.println();
+
+    System.out.println(dis(root,10));
+
+
   }
 
 }

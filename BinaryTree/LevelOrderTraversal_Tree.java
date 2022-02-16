@@ -1,9 +1,18 @@
 import java.util.*;
 
-public class LevelOrderTraversal_Tree extends BST {
+
+class Node {
+    int data;
+    Node left;
+    Node right;
+    Node(int data) {
+        this.data = data;
+        left = right = null;
+    }
+}
+public class LevelOrderTraversal_Tree {
 
  static   void LevelOrderPrinting(Node node) {
-        // code here
         ArrayList<Integer> list = new ArrayList<>();
         Queue<Node> q = new ArrayDeque<>();
         q.add(node);
@@ -57,18 +66,16 @@ public class LevelOrderTraversal_Tree extends BST {
 
     public static void main(String[] args) {
       
-        bstTree a = new bstTree();
-        Node root = null;
-        
-        root = a.insert(root, 8);
-        root = a.insert(root, 3);
-        root = a.insert(root, 6);
-        root = a.insert(root, 10);
-        root = a.insert(root, 4);
-        root = a.insert(root, 7);
-        root = a.insert(root, 1);
-        root = a.insert(root, 14);
-        root = a.insert(root, 13);
+        Node root = new Node(10);
+        root.left = new Node(20);
+        root.right = new Node(30);
+ 
+         root.left.left = new Node(40);
+         root.left.right = new Node(60);
+ 
+         root.right.left = new Node(90);
+         root.right.right = new Node(100);
+ 
         
 
         System.out.println("level order : ");

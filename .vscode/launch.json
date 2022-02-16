@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ceil_And_Floor",
+            "request": "launch",
+            "mainClass": "Ceil_And_Floor",
+            "projectName": "DS-JAVA_2ac12c07"
+        },
+        {
+            "type": "java",
+            "name": "Launch IPL_2020GFG",
+            "request": "launch",
+            "mainClass": "IPL_2020GFG",
+            "projectName": "DS-JAVA_2ac12c07"
+        },
+        {
+            "type": "java",
+            "name": "Launch Insert_A_Node",
+            "request": "launch",
+            "mainClass": "Insert_A_Node",
+            "projectName": "DS-JAVA_2ac12c07"
+        },
+        {
+            "type": "java",
+            "name": "Launch binaryTreeToBST",
+            "request": "launch",
+            "mainClass": "binaryTreeToBST",
+            "projectName": "DS-JAVA_2ac12c07"
+        },
+        {
+            "type": "java",
             "name": "Launch Lngst_Palindromic_Sub_String",
             "request": "launch",
             "mainClass": "Lngst_Palindromic_Sub_String",

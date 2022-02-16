@@ -33,7 +33,6 @@ public class IPL_2020GFG {
 
             while (dq.isEmpty() == false && (arr[i] >= arr[dq.peekLast()]))
                 dq.pollLast();
-
             dq.add(i);
         }
 
